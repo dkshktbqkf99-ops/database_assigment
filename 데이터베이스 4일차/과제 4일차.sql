@@ -35,7 +35,7 @@ CREATE TABLE Reservation (
 CREATE TABLE Service (
     serviceID INT AUTO_INCREMENT PRIMARY KEY,
     serviceType VARCHAR(50),
-    servicePrice DECIMAL(10, 2),
+    servicePrice DECIMAL(18, 0),
     ReservationID INT,
     FOREIGN KEY (ReservationID) REFERENCES Reservation(ReservationID)
 );
